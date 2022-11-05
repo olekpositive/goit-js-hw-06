@@ -11,7 +11,7 @@ function handleSubmit(event) {
     } = event.currentTarget;
 
     if (email.value === "" || password.value === "") {
-        alert("sorry...Please Enter Username and Passowrd");
+        alert("sorry...Please Enter Email and Passowrd");
     }
 
     console.log(`email: ${email.value}, Password: ${password.value}`);
