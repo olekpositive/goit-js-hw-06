@@ -1,7 +1,6 @@
 
 
 const form = document.querySelector("form.login-form");
-
 form.login-form.addEventListener("submit", handleSubmit);
 
 function handleSubmit(event) {
@@ -14,6 +13,11 @@ function handleSubmit(event) {
         alert("sorry...Please Enter Email and Passowrd");
     }
 
-    console.log(`email: ${email.value}, Password: ${password.value}`);
+    const credentials = {
+        email: email.value,
+        password: password.value,
+    };
+    console.log(credentials);
     event.currentTarget.reset();
 }
+
